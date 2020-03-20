@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Router</title>
+    <style>
+        nav {
+            display: flex;
+        }
+
+        nav li {
+            list-style: none;
+        }
+
+        nav li a {
+            text-decoration: none;
+            padding: 10px 10px;
+            background-color: #a09797;
+            color: #ffffff;
+        }
+
+        nav li a:hover {
+            background-color: rgb(63, 58, 58);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <li><a onclick="router.loadRoute('')">Home</a></li>
+            <li><a onclick="router.loadRoute('contact')">Contact</a></li>
+            <li><a onclick="router.loadRoute('about')">About me</a></li>
+        </nav>
+    </header>
+    <section data-router>
+
+    </section>
+
+    <script src="./js/router.js"></script>
+    <script src="./js/routes.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
